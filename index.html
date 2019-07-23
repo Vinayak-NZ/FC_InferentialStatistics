@@ -93,11 +93,9 @@
 						<h2>Rule for probability distribution<h2>
 							<p>
 								<span style="font-family:verdana;font-size:40%" class="fragment fade-up">A probability distribution is a list of the possible outcomes with corresponding probabilities that satisfies three rules:
-									<ol>
-										<li>The outcomes listed must be disjoint</li>
-										<li>Each probability must be between 0 and 1</li>
-										<li>The probability must total 1</li>
-									</ol>
+									<br>The outcomes listed must be disjoint
+									<br>Each probability must be between 0 and 1
+									<br>The probability must total 1
 								</span>
 							</p>
 					</section>
@@ -143,21 +141,30 @@
 						<h2>General multiplication rule<h2>
 							<p>
 								<span style="font-family:verdana;font-size:40%" class="fragment fade-up">If A and B represent two outcomes or events, then
-									<br>$$P(A and B) = P(A|B) x P(B)$$
+									<br>P(A and B) = P(A|B) x P(B)
 									<br>It is useful to think of A as the outcome of interest and B as the condition.
 								</span>
 							</p>
 					</section>
 					<section id="Q2.4fragment">
-						<h2>Probability distribution<h2>
+						<h2>Sum of conditional probabilities<h2>
 							<p>
-								<span style="font-family:verdana;font-size:40%" class="fragment fade-up">$$\sum_{k=1}^Nk(N-k+1)$$</span>
+								<span style="font-family:verdana;font-size:40%" class="fragment fade-up">Let A<sub>1</sub>,...,A<sub>k</sub> represent all the disjoint outcomes for a variable or process. Then if B is an event, possibly for another variable or process we have:
+									<br>P(A<sub>1</sub>|B) + ... + P(A<sub>k</sub>|B) = 1
+									<br>The rule for complements also holds when an event and its complement are conditioned on the same information:
+									<br>P(A|B) = 1 - P(A<sup>c</sup>|B)
+								</span>
 							</p>
 					</section>
 					<section id="Q2.5fragment">
-						<h2>Probability distribution<h2>
+						<h2>Bayes' Theorem: Inverting probabilities<h2>
 							<p>
-								<span style="font-family:verdana;font-size:40%" class="fragment fade-up">$$\sum_{k=1}^Nk(N-k+1)$$</span>
+								<span style="font-family:verdana;font-size:40%" class="fragment fade-up">Consider the following conditional probability for variable 1 and variable 2:
+									<br>P(outcome A<sub>1</sub> of variable 1 | outcome B for variable 2)
+									<br>Bayes' Theorem states taht this conditional probability can be identified as the following fraction:
+									<br>$$\frac{P(B|A<sub>1</sub>)P(A<sub>1</sub>)}{P(B|A<sub>1</sub>)P(A<sub>1</sub>)+P(B|A<sub>2</sub>)P(A<sub>2</sub>)+...+P(B|A<sub>k</sub>)P(A<sub>k</sub>)$$
+									<br>where A<sub>2</sub>, A<sub>3</sub>,..., A<sub>k</sub> represent all other possible outcomes for the first variable.
+								</span>
 							</p>
 					</section>
 					<section id="Q2.6fragment">

@@ -200,6 +200,101 @@
 								</span>
 							</p>
 					</section>
+					<section id="Q2.9fragment">
+						<h2>Linear combination of random variables<h2>
+							<p>
+								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+									If X and Y are random variables, then a linear combination of the random variables is given by:
+									<br>$$aX + bY$$
+									<br>where a and b are some fixed numbers. To compute the average value of a linear combination of random variables, plug in the average of each individual random variable and compute the result:
+									<br>$$a * E(X) + b * E(Y)$$
+									<br>Recall that the expected value is the same as the mean, e.g. $E(X) = \mu$
+								</span>
+							</p>
+					</section>
+					<section id="Q3.0fragment">
+						<h2>The Z-score<h2>
+							<p>
+								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+									The Z-score of an observation is the number of standard deviations it falls above or below the mean.
+									<br>We compute the Z-score for an observation x that follows a distribution with mean $\mu$ and standard deviation $\sigma$ using
+									<br>$$Z = \frac{x-\mu}{\sigma}$$
+								</span>
+							</p>
+					</section>
+					<section id="Q3.1fragment">
+						<h2>Bernoulli random variable<h2>
+							<p>
+								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+									A Bernoulli random variable has exactly two possible outcomes. We typically label one of these outcomes a "success" and the other outcome a "failure".
+									<br>We may also denote a success by 1 and a failure by 0.
+									<br> If X is a random variable, that takes value 1 with probability of success p and 0 with probability 1-p, then X is a Bernoulli random variable with mean and standard deviation
+									<br>$$\mu = p$$
+									<br>$$\sigma = \sqrt{p(1-p)}$$
+								</span>
+							</p>
+					</section>
+					<section id="Q3.2fragment">
+						<h2>Geometric distribution<h2>
+							<p>
+								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+									If the probability of a success in one trial is p and the probability of a failure is 1-p, then the probability of finding the first success in the n<sup>th</sup> trial is given by
+									<br>$$(1-p)^{n-1}p$$
+									<br>The mean, variance, and standard deviation of this wait time are given <body>
+									<br>$$\mu = \frac{1}{p}$$
+									<br>$$\sigma^2 = \frac{1-p}{p^2}$$
+									<br>$$\sigma = sqrt{\frac{1-p}{p^2}}$$
+								</span>
+							</p>
+					</section>
+					<section id="Q3.3fragment">
+						<h2>Binomial distribution<h2>
+							<p>
+								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+									Suppose the probability of a single trial being a success is p.
+									<br>Then the probability of observing exactly $k$ successes in $n$ independent trials is given by
+									<br>$${n \choose k}p^k(1-p)^{n-k} = \frac{n\,!}{k\,!(n-k)\,!}p^k(1-p)^{n-k}$$
+									<br>Additionally, the mean, variance and standard deviation of the number of observed successes area
+									<br>$$\mu = np$$
+									<br>$$\sigma^2 = np(1-p)$$
+									<br>$$\sigma = sqrt{np(1-p)}$$
+								</span>
+							</p>
+					</section>
+					<section id="Q3.3fragment">
+						<h2>Normal approximation of the binomial distribution<h2>
+							<p>
+								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+									The binomial distribution with probability of success p is nearly normal when the sample size n is sufficiently large that np and n(1-p) are both at least 10.
+									<br>The approximate normal distribution has parameters corresponding to the mean and standard deviation of the binomial distribution:
+									<br>$$\mu=np$$
+									<br>$$\sigma=sqrt{np(1-p)}$$
+								</span>
+							</p>
+					</section>
+					<section id="Q3.4fragment">
+						<h2>The negative binomial distribution<h2>
+							<p>
+								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+									The negative binomial distribution describes the probability of observing the k<sup>th</sup> success on the n<sup>th</sup> trial:
+									<br>$$P(the k^{th} success on the n^{th} trial) = {n-1 \choose k-1}p^k(1-p)^{n-k}$$
+									<br>where p is the probability an individual trial is a success. All trials are assumed to be independent.
+								</span>
+							</p>
+					</section>
+					<section id="Q3.4fragment">
+						<h2>Poisson distribution<h2>
+							<p>
+								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+									The Poisson distribution is often useful for estimating the number of events in a large population over a unit of time.
+									<br>If you are watching for events and the number of observed events follows a Poisson distribution with rate $\lambda$, the probability of observing k number of events can be expressed as
+									<br>$$P(observe k events) = \frac{\lambda^k \e^-k}{k\,!}$$
+									<br>where k may take a value 0, 1, 2 and so on and $k\,!$ represents k-factorial.
+									<br>The letter $e \approx 2.718$ is the base of the natural logarithm.
+									<br>The mean and standard deviation of this distribution are $\lambda$ and $\sqrt{\lambda}$ respectively.
+								</span>
+							</p>
+					</section>
 				</section>
 
 				<section style="text-align: center;">
@@ -214,7 +309,7 @@
 					<h2>Want to revise?</h2>
 					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/be9e-Q-jC-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</section>
-						
+
 				<section>
 					<h2>Test</h2>
 					<a href="https://www.openintro.org/stat/textbook.php"</a>

@@ -10,10 +10,12 @@
  *********************************************/
 html {
   width: 100%;
-  height: 100%;
-  height: 100vh;
   height: calc( var(--vh, 1vh) * 100);
-  overflow: hidden; }
+  overflow: hidden;
+  // Minimum 16x, and grows more slowly
+  // (half the rate of screen growth)
+  font-size: calc(16px * 2.25vmin);
+  overflow-y:scroll; }
 
 body {
   height: 100%;
@@ -26,46 +28,12 @@ body {
 
   p {
     line-height: 1.1;
-    font-size:50%;
+    font-size: 50%;
     text-align: left;
     font-family: serif;
     font-weight: lighter;
     font-variant:normal;
   }
-
-<<<<<<< HEAD
-=======
-@media only screen
-    and (min-device-width: 414px)
-    and (max-device-width: 736px)
-    and (-webkit-min-device-pixel-ratio: 3) {
-      p{
-        font-size:5vw
-      }
-  }
-
-  /* Portrait */
-  @media only screen
-    and (min-device-width: 414px)
-    and (max-device-width: 736px)
-    and (-webkit-min-device-pixel-ratio: 3)
-    and (orientation: portrait) {
-      p{
-        font-size:5vw
-      }
-  }
-
-  /* Landscape */
-  @media only screen
-    and (min-device-width: 414px)
-    and (max-device-width: 736px)
-    and (-webkit-min-device-pixel-ratio: 3)
-    and (orientation: landscape) {
-      p{
-        font-size:5vw
-      }
-  }
->>>>>>> 7d36c5211774a67b9deeef44bcac4f1e58450138
 
 /*********************************************
  * VIEW FRAGMENTS

@@ -40,7 +40,7 @@ body {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-    font-size: 50%
+    font-size: 50%;
 }
 
 /* Landscape */
@@ -50,6 +50,7 @@ body {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
     font-size: 40%;
+    overflow: auto;
 }
 
 /*********************************************

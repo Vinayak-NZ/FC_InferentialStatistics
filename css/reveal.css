@@ -11,15 +11,21 @@
 html {
   width: 100%;
   height: calc( var(--vh, 1vh) * 100);
+<<<<<<< HEAD
   overflow: hidden;
   // Minimum 16x, and grows more slowly
   // (half the rate of screen growth)
   font-size: calc(16px * 2.25vmin);
   overflow-y:scroll; }
+=======
+  overflow: auto;
+  overflow-y: scroll;}
+>>>>>>> 19fcb8722c02c49090c77da14e19473fa100a517
 
 body {
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
+  overflow-y: scroll;
   position: relative;
   line-height: 1;
   margin: 0;
@@ -33,6 +39,8 @@ body {
     font-family: serif;
     font-weight: lighter;
     font-variant:normal;
+    overflow: auto;
+    overflow-y: scroll;
   }
 
 /*********************************************

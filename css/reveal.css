@@ -1562,6 +1562,12 @@ body {
 .reveal.show-notes .speaker-notes {
   display: block; }
 
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 736px) {
+    .reveal .slides {
+          font-size: 16px; } }
+
 @media screen and (min-width: 1600px) {
   .reveal .speaker-notes {
     font-size: 20px; } }

@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Pocket Stats: Inferential Statistics</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Flash cards for statisticians">
+		<meta name="author" content="">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -41,12 +41,18 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+
+				<section data-background-image = "images/cover.jpg">
 					<h1>Inferential Statistics</h1>
 				</section>
 
+				<section data-background="#f7f2d3">
+					<h1>Reference</h1>
+					<a href="https://www.openintro.org/stat/textbook.php">All material is drawn from the OpenIntro Statistics textbook by Barr and colleagues (2010)</a>
+				</section>
+
 				<section>
-					<section>
+					<section data-background-image = "images/probability.gif">
 						<h1>Probability</h1>
 					</section>
 					<section id="Q1.1fragment">
@@ -170,7 +176,7 @@
 				</section>
 
 				<section>
-					<section>
+					<section data-background-image = "images/random.jpg">
 						<h1>Distribution of random variables</h1>
 					</section>
 					<section id="Q2.6fragment">
@@ -243,7 +249,7 @@
 									<br>The mean, variance, and standard deviation of this wait time are given <body>
 									<br>$$\mu = \frac{1}{p}$$
 									<br>$$\sigma^2 = \frac{1-p}{p^2}$$
-									<br>$$\sigma = sqrt{\frac{1-p}{p^2}}$$
+									<br>$$\sigma = \sqrt{\frac{1-p}{p^2}}$$
 								</span>
 							</p>
 					</section>
@@ -257,7 +263,7 @@
 									<br>Additionally, the mean, variance and standard deviation of the number of observed successes area
 									<br>$$\mu = np$$
 									<br>$$\sigma^2 = np(1-p)$$
-									<br>$$\sigma = sqrt{np(1-p)}$$
+									<br>$$\sigma = \sqrt{np(1-p)}$$
 								</span>
 							</p>
 					</section>
@@ -268,7 +274,7 @@
 									The binomial distribution with probability of success p is nearly normal when the sample size n is sufficiently large that np and n(1-p) are both at least 10.
 									<br>The approximate normal distribution has parameters corresponding to the mean and standard deviation of the binomial distribution:
 									<br>$$\mu=np$$
-									<br>$$\sigma=sqrt{np(1-p)}$$
+									<br>$$\sigma=\sqrt{np(1-p)}$$
 								</span>
 							</p>
 					</section>
@@ -277,7 +283,7 @@
 							<p>
 								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
 									The negative binomial distribution describes the probability of observing the k<sup>th</sup> success on the n<sup>th</sup> trial:
-									<br>$$P(the k^{th} success on the n^{th} trial) = {n-1 \choose k-1}p^k(1-p)^{n-k}$$
+									<br>P(the k<sup>th</sup> success on the n<sup>th</sup> trial) $$ = {n-1 \choose k-1}p^k(1-p)^{n-k}$$
 									<br>where p is the probability an individual trial is a success. All trials are assumed to be independent.
 								</span>
 							</p>
@@ -288,36 +294,13 @@
 								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
 									The Poisson distribution is often useful for estimating the number of events in a large population over a unit of time.
 									<br>If you are watching for events and the number of observed events follows a Poisson distribution with rate $\lambda$, the probability of observing k number of events can be expressed as
-									<br>$$P(observe k events) = \frac{\lambda^k \e^-k}{k\,!}$$
+									<br>P(observe k events) $$ = \frac{\lambda^k e^{-k}}{k\,!}$$
 									<br>where k may take a value 0, 1, 2 and so on and $k\,!$ represents k-factorial.
 									<br>The letter $e \approx 2.718$ is the base of the natural logarithm.
 									<br>The mean and standard deviation of this distribution are $\lambda$ and $\sqrt{\lambda}$ respectively.
 								</span>
 							</p>
 					</section>
-				</section>
-
-				<section style="text-align: center;">
-					<h1>References</h1>
-					<p>
-						- <a href="https://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
-				<section>
-					<h2>Want to revise?</h2>
-					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/be9e-Q-jC-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</section>
-
-				<section>
-					<h2>Test</h2>
-					<a href="https://www.openintro.org/stat/textbook.php"</a>
-				</section>
-
-				<section>
-					<h2>Test</h2>
-					<a href="https://www.openintro.org/stat/textbook.php"</a>
 				</section>
 
 			</div>

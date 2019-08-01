@@ -58,7 +58,7 @@
 					<section id="Q1.1fragment">
 						<h2>Probability<h2>
 							<p>
-								<span style="font-family:verdana;font-size:40%" class="fragment fade-up">The probability of an outcome is the proportion of times the outcome would occur if we observed the random process an infinite number of times</span>
+								<span style="font-family:verdana"; class="fragment fade-up">The probability of an outcome is the proportion of times the outcome would occur if we observed the random process an infinite number of times</span>
 							</p>
 					</section>
 					<section id="Q1.2fragment">
@@ -281,7 +281,7 @@
 					<section id="Q3.4fragment">
 						<h2>The negative binomial distribution<h2>
 							<p>
-								<span style="font-family:verdana;font-size:40%;text-align:justify" class="fragment fade-up">
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
 									The negative binomial distribution describes the probability of observing the k<sup>th</sup> success on the n<sup>th</sup> trial:
 									<br>P(the k<sup>th</sup> success on the n<sup>th</sup> trial) $$ = {n-1 \choose k-1}p^k(1-p)^{n-k}$$
 									<br>where p is the probability an individual trial is a success. All trials are assumed to be independent.
@@ -291,7 +291,11 @@
 					<section id="Q3.4fragment">
 						<h2>Poisson distribution<h2>
 							<p>
+<<<<<<< HEAD
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+=======
 								<span style="font-family:verdana;text-align:justify;overflow:auto" class="fragment fade-up">
+>>>>>>> 19fcb8722c02c49090c77da14e19473fa100a517
 									The Poisson distribution is often useful for estimating the number of events in a large population over a unit of time.
 									<br>If you are watching for events and the number of observed events follows a Poisson distribution with rate $\lambda$, the probability of observing k number of events can be expressed as
 									<br>P(observe k events) $$ = \frac{\lambda^k e^{-k}}{k\,!}$$
@@ -318,6 +322,11 @@
 				center: true,
 				hash: true,
 				overview: true,
+				width: "100%",
+				height: "100%",
+				margin: 0,
+				minScale: 1,
+				maxScale: 1,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 

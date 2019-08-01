@@ -14,7 +14,7 @@ Reveal.initialize({
     height: "100%",
     margin: 0,
     minScale: 1,
-    maxScale: 1 });
+    maxScale: 1 })
 
 html {
   width: 100%;

@@ -33,6 +33,39 @@ body {
     font-variant:normal;
   }
 
+<<<<<<< HEAD
+=======
+@media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3) {
+      p{
+        font-size:5vw
+      }
+  }
+
+  /* Portrait */
+  @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+      p{
+        font-size:5vw
+      }
+  }
+
+  /* Landscape */
+  @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) {
+      p{
+        font-size:5vw
+      }
+  }
+>>>>>>> 7d36c5211774a67b9deeef44bcac4f1e58450138
 
 /*********************************************
  * VIEW FRAGMENTS

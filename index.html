@@ -40,6 +40,7 @@
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
+
 			<div class="slides">
 
 				<section data-background-image = "images/cover.jpg">
@@ -190,7 +191,7 @@
 							<p>
 								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">If X takes outcomes X<sub>1</sub>,...,X<sub>k</sub> with probabilities P(X=x<sub>1</sub>),...,P(X=x<sub>k</sub>), the expected value of X is the sum of each outcome multiplied by its corresponding probability:
 									<br>E(X) = x<sub>1</sub> x P(X=x<sub>1</sub>) + ... + x<sub>k</sub> x P(X=x<sub>k</sub>)
-									<br>$\sum_{i=1}^k x_i P(X = x_i)$
+									<br>$$\sum_{i=1}^k x_i P(X = x_i)$$
 									<br>The Greek letter $\mu$ may be used in place of the notation E(X)
 								</span>
 							</p>
@@ -303,6 +304,132 @@
 					</section>
 				</section>
 
+					<section>
+						<section data-background-image = "images/foundinf.png">
+							<h1>Foundations for inference</h1>
+						</section>
+					<section id="Q3.5fragment">
+						<h2>Sampling distribution<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									The sampling distribution represents the distribution of the point estimates based on samples of a fixed
+									size from a certain population. It is useful to think of a particular point estimate as being drawn from
+									a certain population. It is useful to think of a particular point estimate as being drawn from such a distribution.
+									Understanding the concept of a sampling distribution is central to understanding statistical inference.
+								</span>
+							</p>
+					</section>
+					<section id="Q3.6fragment">
+						<h2>Standard error of an estimate<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									The standard deviation assocaited with an estimate is called the standard error.
+									It describes the typical error or uncertainty associated with the estimate.
+								</span>
+							</p>
+					</section>
+					<section id="Q3.7fragment">
+						<h2>Computing SE for the sample mean<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									Given n independent observations from a population with standard deviation $\sigma$,
+									the standard error of the sample mean is equal
+									<br> SE = $\frac{\sigma}{\sqrt{n}}$
+									<br> A reliable method to ensure sample observations are independent is to conduct a
+									simple random sample consisting of less than 10% of the population.
+								</span>
+							</p>
+					</section>
+					<section id="Q3.8fragment">
+						<h2>Central Limit Theorem<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									If a sample consists of at least 30 independent observations and the data are not
+									strongly skewed, then the distribution of the sample mean is well approximated by
+									a normal model.
+									<br> The distribution of $\bar{x}$ is approximately normal. The approximation can be poor if the sample
+									size is small, but it improves with larger sample sizes.
+								</span>
+							</p>
+					</section>
+					<section id="Q3.9fragment">
+						<h2>Conditions for $\bar{x}$ being nearly normal and SE being accurate<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									Important conditions to help ensure the sampling distribution of $\bar{x}$ is nearly normal
+									and the estimate of SE sufficiently accurate:
+										<br> 1) The sample observations are independent.
+										<br> 2) The sample size is large: n $\geq$ 30 is a good rule of thumb.
+										<br> 3) The population distribution is not strongly skewed. This condition can be difficult to evaluate, so just use your best judgement.
+									<br> Additionally, the larger the sample size, the more lenient we can be with the sample's skew.
+								</span>
+							</p>
+					</section>
+					<section id="Q4.1fragment">
+						<h2>General confidence interval for the normal sampling distribution case<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									A confidence interval based on an unbiased and nearly normal point estiamte is
+									<br> point estiamte $\pm z \times SE$
+									<br> where z is selected to correspond to the confidence level, and SE represents the standard error. The value $z \times SE$ is called the margin of error.
+								</span>
+							</p>
+					</section>
+					<section id="Q4.2fragment">
+						<h2>Margin of error<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									In a confidence interval, $z \times SE$ is called the margin of error.
+								</span>
+							</p>
+					</section>
+					<section id="Q4.3fragment">
+						<h2>Null and alternative hypothesis<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									The <b>null hypothesis (H<sub>0</sub>)</b> often represents either a skeptical perspective or a claim to be tested.
+									The <b>alternative hypothesis (H<sub>A</sub>)</b> represents an alternative claim under consideration and is
+									often represented by a range of possible parameter values.
+								</span>
+							</p>
+					</section>
+					<section id="Q4.4fragment">
+						<h2>Type 1 Error<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									A Type 1 Error is rejecting the null hypothesis when H<sub>0</sub> is actually true.
+								</span>
+							</p>
+					</section>
+					<section id="Q4.5fragment">
+						<h2>Type 2 Error<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
+								</span>
+							</p>
+					</section>
+					<section id="Q4.6fragment">
+						<h2>p-value<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									The p-value is the probability of observing data at least as favourable to the alternative hypothesis
+									as our current data set, if the null hypothesis is true.
+									<br> The smaller the p-value, the stronger the data favour H<sub>A</sub> over H<sub>0</sub>.
+									A small p-value (usually < 0.05) corresponds to sufficient evidence to reject H<sub>0</sub> in favour of H<sub>A</sub>
+								</span>
+							</p>
+					</section>
+					<section id="Q4.7fragment">
+						<h2>Test-statistic<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
+									A <i>test statistic</i> is a summary statistic that is particularly useful for evaluating a hypothesis test or identifying the p-value.
+									When a point estimate is nearly normal, we use the Z-score of the point estimate as the test statistic.
+								</span>
+							</p>
+					</section>
+				</section>
 			</div>
 
 		</div>

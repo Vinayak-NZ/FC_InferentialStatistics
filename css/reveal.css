@@ -20,23 +20,24 @@ html {
 body {
   height: 100%;
   overflow: auto;
+  margin: auto;
   overflow-y: scroll;
   position: relative;
   line-height: 1;
-  margin: 0;
   background-color: #fff;
   color: #000; }
 
-  p {
-    line-height: 1.1;
-    font-size: 50%;
-    text-align: left;
-    font-family: serif;
-    font-weight: lighter;
-    font-variant:normal;
-    overflow: auto;
-    overflow-y: scroll;
-  }
+p {
+  line-height: 1.1;
+  margin: 0 35px;
+  font-size: 50%;
+  text-align: center;
+  font-family: serif;
+  font-weight: lighter;
+  font-variant:normal;
+  overflow: auto;
+  overflow-y: scroll;
+}
 
 /*********************************************
  * VIEW FRAGMENTS
@@ -485,6 +486,28 @@ body {
   overflow: hidden;
   -ms-touch-action: pinch-zoom;
       touch-action: pinch-zoom; }
+
+.reveal .slides section.title .grid-wrapper {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "header header"
+    "header header"
+    "header header content content"
+    ".                      credit";
+  grid-template-columns: auto 40%;
+  grid-template-rows: 6vmin 1fr auto;
+  grid-column-gap: 10vmin;
+  height: 100%;
+  padding: 10vmin; }
+.logo {
+   grid-area: header; }
+.content {
+  align-self: center;
+  grid-area: content; }
+.credit {
+  grid-area: credit; }
 
 .reveal .slides {
   position: absolute;

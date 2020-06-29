@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Pocket Stats: Inferential Statistics</title>
+		<title>White Rabbit: CANCEIS</title>
 
-		<meta name="description" content="Flash cards for statisticians">
+		<meta name="description" content="Presentation companions">
 		<meta name="author" content="Open Source">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -43,393 +43,300 @@
 
 			<div class="slides">
 
-				<section data-background-image = "images/cover.gif">
-					<h1>Inferential Statistics</h1>
-				</section>
 
-				<section data-background="#f7f2d3">
-					<h1>Reference</h1>
-					<a href="https://www.openintro.org/stat/textbook.php">All material is drawn from the OpenIntro Statistics textbook by Barr and colleagues (2010)</a>
+				<section data-background-image = "images/cover.jpg"; background-size: cover>
+					<h3 style="font-family:verdana;color:teal;text-align:left;padding-left:50px">Census Transformation</h3>
+					<div style="text-align: left;padding-left:50px">
+						<span style="font-family:verdana;font-size:4vmin;color:teal;">Models & Methods</span>
+						<br>
+						<span style="font-family:verdana;font-size:4vmin;color:teal;"> <b>CANCEIS</b>
+						</span>
+					</div>
 				</section>
 
 				<section>
-					<section data-background-image = "images/probability.gif">
-						<h1>Probability</h1>
+					<section data-background-image = "images/tmplt.jpg">
+						<h1 style="color:teal">Editing & Imputation</h1>
 					</section>
-					<section id="Q1.1fragment">
-						<h2>Probability<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q1.1fragment">
+						<h2 style="color:teal">What is editing?<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">The probability of an outcome is the proportion of times the outcome would occur if we observed the random process an infinite number of times</span>
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">Detection and correction of errors in the data.</span>
 							</p>
+							<aside class="notes">
+								Editing and imputing are both methods of data processing.
+								Editing refers to the detection and correction of errors in
+								the data.
+							</aside>
 					</section>
-					<section id="Q1.2fragment">
-						<h2>Law of large numbers<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q1.2fragment">
+						<h2 style="color:teal">What is imputation?<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">As more observations are collected, the proportion of occurences with a particular outcome converges to the probability p of that outcome.</span>
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">A method of correcting errors and estimating and filling in missing values.</span>
 							</p>
+							<aside class="notes">
+								Imputation is a method of correcting errors
+								and estimating and filling in missing values in a data set.
+								Where there are errors in the data set, and when these are
+								considered to add no value in the correction process, these
+								values are set to missing and are imputed with a plausible
+								estimate. Alternatively, missing values may already exist in
+								the data, and imputation may be carried out to produce a
+								complete data set for analysis
+							</aside>
 					</section>
-					<section id="Q1.3fragment">
-						<h2>Disjoint or mutually exclusive outcomes<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q1.3fragment">
+						<h2 style="color:teal">Different types of imputation<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">Two outcomes are called disjoint or mutually exclusive if they cannot both happen</span>
-							</p>
-					</section>
-					<section id="Q1.4fragment">
-						<h2>Addition Rule of disjoint outcomes<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">If A<sub>1</sub> and A<sub>2</sub> represent two disjoint outcomes, then the probability that one of them occur is given by
-									<br>P(A<sub>1</sub> + A<sub>2</sub>) = P(A<sub>1</sub>) + P(A<sub>2</sub>)</span>
-							</p>
-					</section>
-					<section id="Q1.5fragment">
-						<h2>General addition Rule<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">If A and B are two events, disjoint or not, then the probability that at least one of them will occur is
-									<br>P(A or B) = P(A) + P(B) - P(A and B)
-									<br>where P(A and B) is the probability that both events occur.
-									<br>When we write "or" in statistics, we mean "and/or" unless we explicitly state otherwise. Thus, A or B ocurs means A, B or both A and B occur.</span>
-							</p>
-					</section>
-					<section id="Q1.6fragment">
-						<h2>Probability distribution<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">A probability distribution is a table of all disjoint outcomes and their associated probabilities.</span>
-							</p>
-					</section>
-					<section id="Q1.7fragment">
-						<h2>Rule for probability distribution<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">A probability distribution is a list of the possible outcomes with corresponding probabilities that satisfies three rules:
-									<br>The outcomes listed must be disjoint
-									<br>Each probability must be between 0 and 1
-									<br>The probability must total 1
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+									interactive treatment
+									<br>deductive imputation
+									<br>model based imputation
+									<br>donor based imputation
 								</span>
 							</p>
+							<aside class="notes">
+								Methods of variable treatment can be grouped into one of the following categories:
+								<br> interactive treatment
+								<br> Deductive imputation uses logic or an understanding about
+								the relationship between variables and units to fill in
+								missing values. Examples include deriving a value as a
+								function of other values, adopting a value from a related unit,
+								and adopting a value from an earlier time point. Generally,
+								this method is used when the true value can be derived with
+								certainty or with a very high probability.
+								<br> model based imputation
+								<br> donor based imputation
+								<br> Donor based imputation adopt values from an observed unit,
+								which are then used for the missing unit. For each recipient
+								with a missing value for variable y, a donor is identified
+								that is similar to the recipient with respect to certain
+								background characteristics (often referred to as matching
+								variables) that are related to the target variable y.
+								These methods are ideal when there are
+								several related missing values in one record, and if the
+								intention is to preserve the relationship between variables.
+							</aside>
 					</section>
-					<section id="Q1.8fragment">
-						<h2>Complement<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q1.4fragment">
+						<h2 style="color:teal">Conceptualising editing and imputation<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">A complement of event A is denoted A<sup>c</sup>, and A<sup>c</sup> represents all outcomes not in A. A and A<sup>c</sup> are mathematically related:
-									<br>P(A) + P(A<sup>c</sup>) = 1 i.e. P(A) = 1 - P(A<sup>c</sup>)
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+									review
+									<br> select
+									<br> treat
 								</span>
 							</p>
+							<aside class="notes">
+								An imputation process of a data set can be broken down into
+								the following three phases:
+								<br> Review, whereby data is examined for potential problems;
+								identifying instances of missingness and erroneous values
+								<br> Select, whereby data is identified for further treatment.
+								Of the potential problems identified in the review phase,
+								a method is applied to determine which of these erroneous or
+								missing cases need to be treated
+								<br> Treat, whereby changes are applied to the data identified
+								in the select phase by either correcting errors/ filling in
+								missing values
+							</aside>
 					</section>
-					<section id="Q1.9fragment">
-						<h2>Independence<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q1.4fragment">
+						<h2 style="color:teal">Goals of statistical data editing<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">Two processes are independent if knowing the outcome of one provides no useful information about the outcome of the other</span>
-							</p>
-					</section>
-					<section id="Q2.0fragment">
-						<h2>Multiplication Rule for independent processes<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">If A and B represent events from two different and independent processes, then the probability that both A and B occur can be calculated as the product of their separate probabilities
-									<br>P(A and B) = P(A) x P(B)
-									<br>Similarly, if there are k events A<sub>1</sub>,...,A<sub>k</sub> from k independent processes, then the probability they all occur is
-									<br>P(A<sub>1</sub>) x P(A<sub>2</sub>) x ... x P(A<sub>k</sub>)
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+									data in each record should be made to satisfy all edits
+									by changing the fewest possible variables
+									<br> imputation rules should derive automatically from edit
+									rules
+									<br> when imputation is necessary, it should maintain the joint
+									distribution of variables
 								</span>
 							</p>
-					</section>
-					<section id="Q2.1fragment">
-						<h2>Marginal and joint probabilities<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">If a probability is based on a single variable, it is a marginal probability. The probability of outcomes for two or more variables or processes is called a joint probability.</span>
-							</p>
-					</section>
-					<section id="Q2.2fragment">
-						<h2>Conditional probability<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">The conditional probability of the outcome of interest A given condition B is computed as the following
-									<br>$$P(A|B) = \frac{P(A and B)}{P(B)}$$
-								</span>
-							</p>
-					</section>
-					<section id="Q2.3fragment">
-						<h2>General multiplication rule<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">If A and B represent two outcomes or events, then
-									<br>P(A and B) = P(A|B) x P(B)
-									<br>It is useful to think of A as the outcome of interest and B as the condition.
-								</span>
-							</p>
-					</section>
-					<section id="Q2.4fragment">
-						<h2>Sum of conditional probabilities<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">Let A<sub>1</sub>,...,A<sub>k</sub> represent all the disjoint outcomes for a variable or process. Then if B is an event, possibly for another variable or process we have:
-									<br>P(A<sub>1</sub>|B) + ... + P(A<sub>k</sub>|B) = 1
-									<br>The rule for complements also holds when an event and its complement are conditioned on the same information:
-									<br>P(A|B) = 1 - P(A<sup>c</sup>|B)
-								</span>
-							</p>
-					</section>
-					<section id="Q2.5fragment">
-						<h2>Bayes' Theorem: Inverting probabilities<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">Consider the following conditional probability for variable 1 and variable 2:
-									<br>P(outcome A<sub>1</sub> of variable 1 | outcome B for variable 2)
-									<br>Bayes' Theorem states taht this conditional probability can be identified as the following fraction:
-									<br>$$\frac{P(B|A_1)P(A_1)}{P(B|A_1)P(A_1)+P(B|A_2)P(A_2)+ \mu +P(B|A_k)P(A_k)}$$
-									<br>where A<sub>2</sub>, A<sub>3</sub>,..., A<sub>k</sub> represent all other possible outcomes for the first variable.
-								</span>
-							</p>
+							<aside class="notes">
+								A couple of researchers, proposed a set of goals for statistical
+								data editing. That is, when we are transforming our dataset with
+								edit rules and imputation, what should we strive for. The
+								Felligi-Holt principles advocate for the following:
+								<br> that we create units that pass edit rules whilst
+								making the fewest possible changes to their original values
+								<br> where we use deductive imputation, it is based on our edit
+								rules
+								<br> when we have imputed the data, we've maintained the relationship
+								between variables
+							</aside>
 					</section>
 				</section>
 
 				<section>
-					<section data-background-image = "images/dist.gif">
-						<h1>Distribution of random variables</h1>
+					<section data-background-image = "images/tmplt.jpg">
+						<h1 style="color:teal">CANCEIS</h1>
 					</section>
-					<section id="Q2.6fragment">
-						<h2>Random variable<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q2.6fragment">
+						<h2 style="color:teal">What is CANCEIS?<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">A random process or variable with a numerical outcome.</span>
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">CANadian Census Edit and Imputation System</span>
 							</p>
+							<aside class="notes">
+								CANCEIS is a tool that is used to carry out editing and
+								imputation. It was designed and built by Statistics Canada.
+								<br> It was designed based on the Felligi-Holt principles
+								<br> It was built using the C# programming language.
+								<br> CANCEIS carries out deductive and donor imputation.
+							</aside>
 					</section>
-					<section id="Q2.7fragment">
-						<h2>Expected value of a discrete random variable<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q2.7fragment">
+						<h2 style="color:teal">How does it work?<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">If X takes outcomes X<sub>1</sub>,...,X<sub>k</sub> with probabilities P(X=x<sub>1</sub>),...,P(X=x<sub>k</sub>), the expected value of X is the sum of each outcome multiplied by its corresponding probability:
-									<br>E(X) = x<sub>1</sub> x P(X=x<sub>1</sub>) + ... + x<sub>k</sub> x P(X=x<sub>k</sub>)
-									<br>$$\sum_{i=1}^k x_i P(X = x_i)$$
-									<br>The Greek letter $\mu$ may be used in place of the notation E(X)
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+									input
+									<br> process
+									<br> output
 								</span>
 							</p>
+							<aside class="notes">
+								At a high level, you can break the CANCEIS process into:
+								<br> input
+								<br> process
+								<br> output
+								<br> At the input stage, you specify the edit rules, which tell
+								CANCEIS how to spot invalid or implausible responses for a
+								given variable or how to spot an incorrect or implausible combination of responses
+								across multiple variables.
+								<br> At the input stage, you also instruct CANCIES on how to find
+								donors. Remember that with donor imputation, we are trying to impute
+								values using respondents that we think would have responded similarly.
+								So we give CANCEIS instructions on how to find this "similar" unit.
+								<br> At the process stage:
+								<br> 1) units get sorted based on a set of edit rules, where
+								they either pass and become donors or fail and become recipients
+								<br> 2) imputation is carried out. this can be done deductively
+								using the edit rules. Or donors and recipients are matched on qualitative and
+								quantitative variables, to identify nearest neighbours
+								<br> 3) imputed responses are evaluated against the edit rules.
+								If they pass these edit rules, they are retained. If they fail,
+								we repeat the search for a donor.
+								<br> At the output stage, you get your edited and imputed dataset,
+								as well as a bunch of metadata, which describes the output. And
+								you also get a bunch of paradata, which describes the process.
+							</aside>
 					</section>
-					<section id="Q2.8fragment">
-						<h2>General variance formula<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q2.8fragment">
+						<h2 style="color:teal">CANCEIS inputs<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									If X takes outcomes x<sub>1</sub>,...,x<sub>k</sub> with probabilities P(X=x<sub>1</sub>),...,P(X=x<sub>k</sub>) and expected value $\mu = E(X)$, then the variance of X, denoted by Var(X) or the symbol $\sigma^2$, is
-									<br>$\sigma^2 = (x_1 - \mu)^2 * P(X=X_i) + ... + (x_k-\mu)^2 * P(X=x_k)$
-									<br> $$ = \sum_{j=1}^k (x_j - \mu)^2 P(X=x_j)$$
-									<br>The standard deviation of X, labeled $\sigma$, is the square root of the variance
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+									data dicionary
+									<br> decision logic table
+									<br> input dataset
 								</span>
 							</p>
+							<aside class="notes">
+								the data dictionary tells CANCEIS what is considered to be a
+								valid response for a given variable.
+								<br> the decision logic table, is where we specify the edit rules.
+								This tells CANCEIS what would be an inconsistent response between
+								two or more variables.
+								<br> the input dataset has your units and items. We've got to code
+								the missing values so CANCEIS knows when missingness needs to be imputed.
+							</aside>
 					</section>
-					<section id="Q2.9fragment">
-						<h2>Linear combination of random variables<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q2.9fragment">
+						<h2 style="color:teal">CANCEIS process<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									If X and Y are random variables, then a linear combination of the random variables is given by:
-									<br>$$aX + bY$$
-									<br>where a and b are some fixed numbers. To compute the average value of a linear combination of random variables, plug in the average of each individual random variable and compute the result:
-									<br>$$a * E(X) + b * E(Y)$$
-									<br>Recall that the expected value is the same as the mean, e.g. $E(X) = \mu$
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+									<br><b>Review</b> observations in the input dataset
+									<br><b>Select</b> values using the data dictionary and decision
+									logic table
+									<br><b>Treat</b> data using either deductive or donor imputation (
+									minimum change nearest neighbour)
+									</table>
 								</span>
 							</p>
+							<aside class="notes">
+								If we are to look at the CANCEIS methodology through the
+								GSDEM lense, it would take the following form:
+								<br> CANCIES uses the data dictionary and decision logic table
+								to review the variables you've asked it to edit and impute; to
+								identify potentially problematic values
+								<br> Using your parameters in the data dictionary and decision
+								logic table, it selects units for treatment
+								<br> During the treatment phase, it will transform your dataset
+								using deductive and donor imputation. For the latter, it can use
+								either a deterministic or stochastic mechanism. That is, when it
+								is selecting a donor it can either randomly select a donor or
+								select the "best" possible donor.
+								<br> The type of donor imputation it carries out is called minimum
+								change nearest neighbour imputation. What this means is that when
+								it is looking for a donor; it looks both at whether the imputed
+								value would pass the edit rules and how far this new value is
+								from the original value. For example if a unit's net
+								income is reported as being greater than their gross income,
+								this unit will be selected for treatment. During the donor search
+								process, it will look for imputed values for both gross and net
+								income. And then select an imputation action that would preserve
+								the net-gross relationship but also result in smallest change to
+								reported values.
+							</aside>
 					</section>
-					<section id="Q3.0fragment">
-						<h2>The Z-score<h2>
+					<section data-background-image = "images/tmplt.jpg" id="Q3.0fragment">
+						<h2 style="color:teal">CANCEIS outputs<h2>
 							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									The Z-score of an observation is the number of standard deviations it falls above or below the mean.
-									<br>We compute the Z-score for an observation x that follows a distribution with mean $\mu$ and standard deviation $\sigma$ using
-									<br>$$Z = \frac{x-\mu}{\sigma}$$
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+									output dataset
+									<br> summary about process
+									<br> details about process
 								</span>
 							</p>
-					</section>
-					<section id="Q3.1fragment">
-						<h2>Bernoulli random variable<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									A Bernoulli random variable has exactly two possible outcomes. We typically label one of these outcomes a "success" and the other outcome a "failure".
-									<br>We may also denote a success by 1 and a failure by 0.
-									<br> If X is a random variable, that takes value 1 with probability of success p and 0 with probability 1-p, then X is a Bernoulli random variable with mean and standard deviation
-									<br>$$\mu = p$$
-									<br>$$\sigma = \sqrt{p(1-p)}$$
-								</span>
-							</p>
-					</section>
-					<section id="Q3.2fragment">
-						<h2>Geometric distribution<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									If the probability of a success in one trial is p and the probability of a failure is 1-p, then the probability of finding the first success in the n<sup>th</sup> trial is given by
-									<br>$$(1-p)^{n-1}p$$
-									<br>The mean, variance, and standard deviation of this wait time are given <body>
-									<br>$$\mu = \frac{1}{p}$$
-									<br>$$\sigma^2 = \frac{1-p}{p^2}$$
-									<br>$$\sigma = \sqrt{\frac{1-p}{p^2}}$$
-								</span>
-							</p>
-					</section>
-					<section id="Q3.3fragment">
-						<h2>Binomial distribution<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									Suppose the probability of a single trial being a success is p.
-									<br>Then the probability of observing exactly $k$ successes in $n$ independent trials is given by
-									<br>$${n \choose k}p^k(1-p)^{n-k} = \frac{n\,!}{k\,!(n-k)\,!}p^k(1-p)^{n-k}$$
-									<br>Additionally, the mean, variance and standard deviation of the number of observed successes area
-									<br>$$\mu = np$$
-									<br>$$\sigma^2 = np(1-p)$$
-									<br>$$\sigma = \sqrt{np(1-p)}$$
-								</span>
-							</p>
-					</section>
-					<section id="Q3.3fragment">
-						<h2>Normal approximation of the binomial distribution<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									The binomial distribution with probability of success p is nearly normal when the sample size n is sufficiently large that np and n(1-p) are both at least 10.
-									<br>The approximate normal distribution has parameters corresponding to the mean and standard deviation of the binomial distribution:
-									<br>$$\mu=np$$
-									<br>$$\sigma=\sqrt{np(1-p)}$$
-								</span>
-							</p>
-					</section>
-					<section id="Q3.4fragment">
-						<h2>The negative binomial distribution<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									The negative binomial distribution describes the probability of observing the k<sup>th</sup> success on the n<sup>th</sup> trial:
-									<br>P(the k<sup>th</sup> success on the n<sup>th</sup> trial) $$ = {n-1 \choose k-1}p^k(1-p)^{n-k}$$
-									<br>where p is the probability an individual trial is a success. All trials are assumed to be independent.
-								</span>
-							</p>
-					</section>
-					<section id="Q3.4fragment">
-						<h2>Poisson distribution<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									The Poisson distribution is often useful for estimating the number of events in a large population over a unit of time.
-									<br>If you are watching for events and the number of observed events follows a Poisson distribution with rate $\lambda$, the probability of observing k number of events can be expressed as
-									<br>P(observe k events) $$ = \frac{\lambda^k e^{-k}}{k\,!}$$
-									<br>where k may take a value 0, 1, 2 and so on and $k\,!$ represents k-factorial.
-									<br>The letter $e \approx 2.718$ is the base of the natural logarithm.
-									<br>The mean and standard deviation of this distribution are $\lambda$ and $\sqrt{\lambda}$ respectively.
-								</span>
-							</p>
+							<aside class="notes">
+								CANCEIS has a ton of output files that include:
+								<br> the output dataset
+								<br> a summary of how everything ran and if all errors were
+								resolved
+								<br> more detailed output files about why units were selected
+								for treatment and how they were transformed
+							</aside>
 					</section>
 				</section>
 
-					<section>
-						<section data-background-image = "images/foundinf.gif">
-							<h1>Foundations for inference</h1>
-						</section>
-					<section id="Q3.5fragment">
-						<h2>Sampling distribution<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									The sampling distribution represents the distribution of the point estimates based on samples of a fixed
-									size from a certain population. It is useful to think of a particular point estimate as being drawn from
-									a certain population. It is useful to think of a particular point estimate as being drawn from such a distribution.
-									Understanding the concept of a sampling distribution is central to understanding statistical inference.
-								</span>
-							</p>
+				<section>
+					<section data-background-image = "images/tmplt.jpg">
+						<h1 style="color:teal">Lessons in application</h1>
 					</section>
-					<section id="Q3.6fragment">
-						<h2>Standard error of an estimate<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									The standard deviation assocaited with an estimate is called the standard error.
-									It describes the typical error or uncertainty associated with the estimate.
-								</span>
-							</p>
-					</section>
-					<section id="Q3.7fragment">
-						<h2>Computing SE for the sample mean<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									Given n independent observations from a population with standard deviation $\sigma$,
-									the standard error of the sample mean is equal
-									<br> SE = $\frac{\sigma}{\sqrt{n}}$
-									<br> A reliable method to ensure sample observations are independent is to conduct a
-									simple random sample consisting of less than 10% of the population.
-								</span>
-							</p>
-					</section>
-					<section id="Q3.8fragment">
-						<h2>Central Limit Theorem<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									If a sample consists of at least 30 independent observations and the data are not
-									strongly skewed, then the distribution of the sample mean is well approximated by
-									a normal model.
-									<br> The distribution of $\bar{x}$ is approximately normal. The approximation can be poor if the sample
-									size is small, but it improves with larger sample sizes.
-								</span>
-							</p>
-					</section>
-					<section id="Q3.9fragment">
-						<h2>Conditions for $\bar{x}$ being nearly normal and SE being accurate<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									Important conditions to help ensure the sampling distribution of $\bar{x}$ is nearly normal
-									and the estimate of SE sufficiently accurate:
-										<br> 1) The sample observations are independent.
-										<br> 2) The sample size is large: n $\geq$ 30 is a good rule of thumb.
-										<br> 3) The population distribution is not strongly skewed. This condition can be difficult to evaluate, so just use your best judgement.
-									<br> Additionally, the larger the sample size, the more lenient we can be with the sample's skew.
-								</span>
-							</p>
-					</section>
-					<section id="Q4.1fragment">
-						<h2>General confidence interval for the normal sampling distribution case<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									A confidence interval based on an unbiased and nearly normal point estiamte is
-									<br> point estiamte $\pm z \times SE$
-									<br> where z is selected to correspond to the confidence level, and SE represents the standard error. The value $z \times SE$ is called the margin of error.
-								</span>
-							</p>
-					</section>
-					<section id="Q4.2fragment">
-						<h2>Margin of error<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									In a confidence interval, $z \times SE$ is called the margin of error.
-								</span>
-							</p>
-					</section>
-					<section id="Q4.3fragment">
-						<h2>Null and alternative hypothesis<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									The <b>null hypothesis (H<sub>0</sub>)</b> often represents either a skeptical perspective or a claim to be tested.
-									The <b>alternative hypothesis (H<sub>A</sub>)</b> represents an alternative claim under consideration and is
-									often represented by a range of possible parameter values.
-								</span>
-							</p>
-					</section>
-					<section id="Q4.4fragment">
-						<h2>Type 1 Error<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									A Type 1 Error is rejecting the null hypothesis when H<sub>0</sub> is actually true.
-								</span>
-							</p>
-					</section>
-					<section id="Q4.5fragment">
-						<h2>Type 2 Error<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									A Type 2 Error is failing to reject the null hypothesis when the alternative is actually true.
-								</span>
-							</p>
-					</section>
-					<section id="Q4.6fragment">
-						<h2>p-value<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									The p-value is the probability of observing data at least as favourable to the alternative hypothesis
-									as our current data set, if the null hypothesis is true.
-									<br> The smaller the p-value, the stronger the data favour H<sub>A</sub> over H<sub>0</sub>.
-									A small p-value (usually < 0.05) corresponds to sufficient evidence to reject H<sub>0</sub> in favour of H<sub>A</sub>
-								</span>
-							</p>
-					</section>
-					<section id="Q4.7fragment">
-						<h2>Test-statistic<h2>
-							<p>
-								<span style="font-family:verdana;font-size:2.5vmin" class="fragment fade-up">
-									A <i>test statistic</i> is a summary statistic that is particularly useful for evaluating a hypothesis test or identifying the p-value.
-									When a point estimate is nearly normal, we use the Z-score of the point estimate as the test statistic.
-								</span>
-							</p>
+					<section data-background-image = "images/tmplt.jpg" id="Q3.5fragment">
+					<h2 style="color:teal">Importance of Design<h2>
+						<img src="images/gsbpm.png" alt="gsbpm" class="responsive"/>
+						<aside class="notes">
+						</aside>
 					</section>
 				</section>
+
+				<section>
+					<section data-background-image = "images/tmplt.jpg">
+						<h1 style="color:teal">Deeper down the rabbit hole</h1>
+					</section>
+					<section data-background-image = "images/tmplt.jpg" id="Q3.5fragment">
+						<h2 style="color:teal">Want to know more about CANCEIS?<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+								</span>
+							</p>
+							<aside class="notes">
+							Would you like more information about CANCEIS or a follow up
+							presentation?
+							</aside>
+					</section>
+					<section data-background-image = "images/tmplt.jpg" id="Q3.5fragment">
+						<h2 style="color:teal">CANCEIS and Census Development?<h2>
+							<p>
+								<span style="font-family:verdana;font-size:2.5vmin;color:teal;" class="fragment fade-up">
+								</span>
+							</p>
+							<aside class="notes">
+							What support can we provide Census Development with CANCEIS?
+							</aside>
+					</section>
+				</section>
+
 			</div>
 
 		</div>
